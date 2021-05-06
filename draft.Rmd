@@ -1,6 +1,6 @@
 ---
 title: "BMS Project"
-author: "Meg Raisle"
+author: "Cameron McKinley"
 date: "5/5/2021"
 output: html_document
 ---
@@ -11,9 +11,18 @@ library(dplyr)
 library(ggplot2)
 ```
 
-## Load Data
+```{r Mess with Data, eval=TRUE, echo=FALSE}
+options(scipen=999)
+data <- read.csv("/Users/mraisle/Desktop/opal.csv")
 
-```{r Mess with Data, eval=FALSE}
+
+
+
+```
+
+### In April of 2021, `r n_distinct(data$company)` contractors were on sight for a total of `r sum(data$total_time_hrs)` hours.
+
+
 
 
 
